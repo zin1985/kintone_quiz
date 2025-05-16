@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Kintone アソシエイト模擬試験</title>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- クイズ処理 -->
+  <script src="/assets/js/quiz.js" defer></script>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 1rem; }
+    fieldset { margin-bottom: 1.5rem; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Kintone アソシエイト模擬試験</h1>
+
+  <!-- カウントダウンタイマー -->
+  <p>残り時間: <span id="timer">60:00</span></p>
+
+  <!-- 問題リスト -->
+  <form id="quizForm"></form>
+
+  <!-- 解答送信 -->
+  <button id="submitBtn" class="hidden">解答送信</button>
+
+  <!-- 結果表示 -->
+  <section id="result" class="hidden">
+    <h2>結果</h2>
+    <canvas id="catChart" width="400" height="300"></canvas>
+    <div id="scoreSummary"></div>
+    <details>
+      <summary>全問題の解答・解説を見る</summary>
+      <div id="fullReview"></div>
+    </details>
+  </section>
+</body>
+</html>

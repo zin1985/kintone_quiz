@@ -1,0 +1,5 @@
+title: "Kintone Associate Mock Exam"
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
