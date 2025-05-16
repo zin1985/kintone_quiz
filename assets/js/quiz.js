@@ -22,7 +22,7 @@ let timerInterval;
 const base = "/kintone_quiz";
 fetch(`${base}/assets/data/questions.json`)
   .then(res => res.json())
-  .then(setupExam);
+  .then(setupExam)
   .catch(err => alert('問題データの読み込みに失敗しました: ' + err));
 
 // ---------------------------------
