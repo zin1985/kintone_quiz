@@ -1,4 +1,5 @@
 title: "Kintone Associate Mock Exam"
+baseurl: "/kintone_quiz"
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
