@@ -5,3 +5,6 @@ repository: zin1985/kintone_quiz
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+concurrency:
+  group: "pages-deploy"
+  cancel-in-progress: true
