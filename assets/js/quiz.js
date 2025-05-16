@@ -19,9 +19,10 @@ let currentSec = TIMER_SEC;
 let timerInterval;
 
 // --- 質問データを取得して開始 ---
-fetch('{{ "/assets/data/questions.json" | relative_url }}')
+const base = "/kintone_quiz";
+fetch(`${base}/assets/data/questions.json`)
   .then(res => res.json())
-  .then(setupExam)
+  .then(setupExam);
   .catch(err => alert('問題データの読み込みに失敗しました: ' + err));
 
 // ---------------------------------
