@@ -1,6 +1,7 @@
 title: "Kintone Associate Mock Exam"
 baseurl: "/kintone_quiz"
 markdown: kramdown
+repository: zin1985/kintone_quiz
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
